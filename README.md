@@ -1,4 +1,4 @@
-# Skeleton
+# This is Zorachka Skeleton
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/zorachka/skeleton.svg?style=flat-square)](https://packagist.org/packages/zorachka/skeleton)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/zorachka/skeleton/run-tests?label=tests)](https://github.com/zorachka/skeleton/actions?query=workflow%3ATests+branch%3Amaster)
@@ -8,6 +8,8 @@
 ---
 
 ## Installation
+
+The project is under heavy development.
 
 You can create a project via composer:
 
