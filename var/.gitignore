@@ -1,0 +1,10 @@
+*
+!cache/.gitkeep
+!cache/container/.gitkeep
+!cache/container/proxies/.gitkeep
+!cache/config/.gitkeep
+!cache/twig/.gitkeep
+
+!log/.gitkeep
+
+!.gitignore
