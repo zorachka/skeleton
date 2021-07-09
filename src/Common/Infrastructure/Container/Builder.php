@@ -7,11 +7,11 @@ namespace Project\Common\Infrastructure\Container;
 use DI\ContainerBuilder;
 use Laminas\ConfigAggregator\ConfigAggregator;
 use Laminas\ConfigAggregator\PhpFileProvider;
+use function Project\Common\root_path;
 use Project\Example\Infrastructure\ConfigProvider;
 use Psr\Container\ContainerInterface;
-use Zorachka\Application\Support\Env;
 
-use function Project\Common\root_path;
+use Zorachka\Application\Support\Env;
 
 final class Builder
 {
