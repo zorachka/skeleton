@@ -1,3 +1,5 @@
+# DEPRECATED. USE [https://github.com/zorachka/app](https://github.com/zorachka/app)
+
 # This is Zorachka Skeleton
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/zorachka/skeleton.svg?style=flat-square)](https://packagist.org/packages/zorachka/skeleton)
