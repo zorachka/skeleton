@@ -8,10 +8,10 @@ use DI\ContainerBuilder;
 use Laminas\ConfigAggregator\ConfigAggregator;
 use Laminas\ConfigAggregator\PhpFileProvider;
 use Project\Blog\Infrastructure\ConfigProvider;
-use Psr\Container\ContainerInterface;
-use Zorachka\Application\Support\Env;
-
 use function Project\Common\root_path;
+use Psr\Container\ContainerInterface;
+
+use Zorachka\Application\Support\Env;
 
 final class Builder
 {
