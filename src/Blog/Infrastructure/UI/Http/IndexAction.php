@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Project\Example\UI\Http;
+namespace Project\Blog\Infrastructure\UI\Http;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -23,6 +23,6 @@ final class IndexAction implements RequestHandlerInterface
      */
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
-        return $this->view->response('index');
+        return $this->view->response('app/index');
     }
 }

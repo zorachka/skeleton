@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Project\Example\Infrastructure;
+namespace Project\Blog\Infrastructure;
 
 final class ConfigProvider
 {
     public function __invoke(): array
     {
-        $config = Config::defaults();
-        $defaults = $config();
+        $defaultConfig = Config::withDefaults();
+        $defaults = $defaultConfig->build();
 
         return [
             'config' => $defaults['config'],

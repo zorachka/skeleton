@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{% block title %}Title{% endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
 
-    <link rel="stylesheet" href="{{ frontend_url('assets/index.css') }}">
+    {% block stylesheets %}{% endblock %}
 
     <meta name="description" content="Description">
     <meta property="og:title" content="Title">

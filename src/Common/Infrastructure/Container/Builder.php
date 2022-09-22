@@ -7,8 +7,8 @@ namespace Project\Common\Infrastructure\Container;
 use DI\ContainerBuilder;
 use Laminas\ConfigAggregator\ConfigAggregator;
 use Laminas\ConfigAggregator\PhpFileProvider;
+use Project\Blog\Infrastructure\ConfigProvider;
 use function Project\Common\root_path;
-use Project\Example\Infrastructure\ConfigProvider;
 use Psr\Container\ContainerInterface;
 
 use Zorachka\Application\Support\Env;
@@ -43,8 +43,8 @@ final class Builder
             \Zorachka\Infrastructure\Clock\ConfigProvider::class,
 
             // DB and migrations
-            \Zorachka\Infrastructure\Database\DoctrineDBAL\ConfigProvider::class,
-            \Zorachka\Infrastructure\Database\Migrations\ConfigProvider::class,
+            \Zorachka\Infrastructure\Database\Cycle\DBAL\ConfigProvider::class,
+            \Zorachka\Infrastructure\Database\Cycle\Migrations\ConfigProvider::class,
 
             // Logger
             \Zorachka\Infrastructure\Logger\ConfigProvider::class,
@@ -78,8 +78,8 @@ final class Builder
         ], $cachedConfigFile);
 
         $builder->addDefinitions($aggregator->getMergedConfig());
-
-//        \var_dump($aggregator->getMergedConfig()['config']['console']);
+//
+//        dump($aggregator->getMergedConfig()['config']);
 //        die();
 
         if ($isProduction) {
