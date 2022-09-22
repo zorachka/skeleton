@@ -14,7 +14,7 @@ The project is under heavy development.
 You can create a project via composer:
 
 ```bash
-composer create-project zorachka/skeleton
+composer create-project zorachka/skeleton my-next-project
 ```
 
 ## Usage
